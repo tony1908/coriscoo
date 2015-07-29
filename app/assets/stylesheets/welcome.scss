@@ -2,7 +2,7 @@
 
 
 /*************************
-*******Typography****** .top-bar
+*******Typography****** 268340
 **************************/
 
 body {
@@ -184,8 +184,8 @@ body > section {
 
 .top-bar {
   padding: 10px 0;
-  background: #71B11F;
-  border-bottom: 1px solid #3C5F34;
+  background: #268340;
+  border-bottom: 1px solid #268340;
   line-height: 28px;
 }
 
@@ -215,7 +215,7 @@ ul.social-share li {
 ul.social-share li a {
   display: inline-block;
   color: #fff;
-  background: #3C5F34;
+  background: #268340;
   width: 25px;
   height: 25px;
   line-height: 25px;
@@ -265,7 +265,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background:   #6CAF16;
+  background:   white;
   padding: 15px 0;
   padding-bottom: 0;
 }
@@ -283,13 +283,13 @@ input.search-form:hover {
   padding: 5px 12px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+  color: black;
   line-height: 24px;
   display: inline-block;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-  background-color: #3C5F34;
+  background-color: #268340;
   color: #fff;
 }
 
@@ -309,7 +309,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #3C5F34;
+  background-color: #268340;
   color: #fff;
 }
 
@@ -386,7 +386,7 @@ input.search-form:hover {
 
 #main-slider .carousel .btn-slide {
   padding: 8px 20px;
-  background: #c52d2f;
+  background: #268340;
   color: #fff;
   border-radius: 4px;
   margin-top: 25px;
@@ -434,7 +434,7 @@ input.search-form:hover {
 #main-slider .next {
   position: absolute;
   top: 50%;
-  background-color: #3C5F34;
+  background-color: #268340;
   color: #fff;
   display: inline-block;
   margin-top: -25px;
@@ -495,8 +495,8 @@ input.search-form:hover {
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  background: #3C5F34;
-  border: 1px solid #3C5F34;
+  background: #268340;
+  border: 1px solid #268340;
   left: -3px;
   top: -3px;
 }
@@ -2503,7 +2503,7 @@ shortcodes page css
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #6CAF16;
+  background: #268340;
 }
 
 #footer a {
@@ -2527,5 +2527,5 @@ shortcodes page css
 
 .logo-img
 {
-  width: 95%;
+  width: 200px;
 }
