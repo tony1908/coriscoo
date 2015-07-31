@@ -6,4 +6,8 @@ class WelcomeController < ApplicationController
 	def services
 		
 	end
+
+	def serviceRequest
+		@user = ''
+	end
 end
