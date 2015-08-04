@@ -26,6 +26,7 @@ gem "twitter-bootstrap-rails"
 gem 'turbolinks'
 gem 'rails_12factor'
 gem 'puma'
+gem 'sendgrid-rails', '~> 2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
