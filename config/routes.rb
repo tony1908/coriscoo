@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/serviceRequest' =>'welcome#serviceRequest'
   get '/about' => 'welcome#about'
   get '/service/:id' => 'welcome#service'
+  post 'services/email' => 'welcome#emailSend'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

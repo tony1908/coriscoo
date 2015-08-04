@@ -1,43 +1,44 @@
 <div class="container">
 	<h2>Service Request</h2>
-	<%= form_for @user, :html => {:class => "form-horizontal"} do |f| %>
+	
+  <%= form_for @user,:html => {:class => "form-horizontal"}, url: url_for( action: 'emailSend'), method: :post do  |f| %>
       <div class="form-group">
-        <%= f.label :fname, "First name:", class: "col-sm-2 control-label" %>
+        <%= f.label :first, "First name:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.text_field :fname, class: "form-control" %>
+          <%= f.text_field :first, class: "form-control" %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :lname, "Last name:", class: "col-sm-2 control-label" %>
+        <%= f.label :last, "Last name:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.text_field :lname, class: "form-control" %>
+          <%= f.text_field :last, class: "form-control" %>
         </div>
       </div>
 
         <div class="form-group">
-        <%= f.label :pname, "Phone:", class: "col-sm-2 control-label" %>
+        <%= f.label :phone, "Phone:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.text_field :pname, class: "form-control" %>
+          <%= f.text_field :phone, class: "form-control" %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :ename, "Email:", class: "col-sm-2 control-label" %>
+        <%= f.label :email, "Email:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.email_field :ename, class: "form-control" %>
+          <%= f.email_field :email, class: "form-control" %>
         </div>
       </div>
 
 
         <div class="form-group">
-        <%= f.label :sname, "Service Request Address:", class: "col-sm-2 control-label" %>
+        <%= f.label :address, "Service Request Address:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.text_field :sname, class: "form-control" %>
+          <%= f.text_field :address, class: "form-control" %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :tname, "Description:", class: "col-sm-2 control-label" %>
+        <%= f.label :description, "Description:", class: "col-sm-2 control-label" %>
         <div class="col-sm-10">
-          <%= f.text_area :tname, class: "form-control", size: "20x20" %>
+          <%= f.text_area :description, class: "form-control", size: "20x20" %>
         </div>
       </div>
 
