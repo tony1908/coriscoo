@@ -9,6 +9,7 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'carrierwave'
 gem "cancan"
 gem 'active_skin'
 # Use Uglifier as compressor for JavaScript assets

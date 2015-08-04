@@ -1,35 +1,49 @@
 <div class="container">
 	<h2>Service Request</h2>
-	<h2>Leave a message</h2>
-	<h2>Here:</h2>
-	<%= form_for @user, :html => {:class => "form-horizontal center"} do |f| %>
+	<%= form_for @user, :html => {:class => "form-horizontal"} do |f| %>
       <div class="form-group">
-        <%= f.label :fname, "First name:", class: "col-md-4 control-label" %>
-        <div class="col-md-8">
+        <%= f.label :fname, "First name:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
           <%= f.text_field :fname, class: "form-control" %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :lname, "Last name:", class: "col-md-4 control-label" %>
-        <div class="col-md-8">
+        <%= f.label :lname, "Last name:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
           <%= f.text_field :lname, class: "form-control" %>
         </div>
       </div>
 
-      <div class="form-group">
-        <%= f.label :comments, "Comments:", class: "col-md-4 control-label" %>
-        <div class="col-md-8>
-          <%= f.text_field :comments, class: "form-control" %>
+        <div class="form-group">
+        <%= f.label :pname, "Phone:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= f.text_field :pname, class: "form-control" %>
         </div>
       </div>
-      <div class="radio">
-        <%= f.radio_button :attend, 'yes', :checked => true %> Option 1
-        <%= f.radio_button :attend, 'no', :checked => false %> Option 2
-      </div>
-      <div class="checkbox">
-        <%= f.check_box :workshop %> Checkbox Description
+      <div class="form-group">
+        <%= f.label :ename, "Email:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= f.email_field :ename, class: "form-control" %>
+        </div>
       </div>
 
-      <%= f.submit "Submit", class: "btn btn-default btn-primary" %>  
+
+        <div class="form-group">
+        <%= f.label :sname, "Service Request Address:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= f.text_field :sname, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :tname, "Description:", class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= f.text_area :tname, class: "form-control", size: "20x20" %>
+        </div>
+      </div>
+
+
+      <%= f.submit "Submit", class: "btn btn-default btn-primary center-block" %>  
  <% end %>
 </div>
+
+

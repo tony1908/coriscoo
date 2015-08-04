@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/services' => 'welcome#services'
   get '/serviceRequest' =>'welcome#serviceRequest'
+  get '/about' => 'welcome#about'
+  get '/service/:id' => 'welcome#service'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
