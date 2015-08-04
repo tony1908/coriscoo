@@ -14,8 +14,8 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   ActionMailer::Base.smtp_settings = {
-  :user_name => ['SEND_USER'],
-  :password => ['SEND_PASS'],
+  :user_name => ENV['SEND_USER'],
+  :password => ENV['SEND_PASS'],
   :domain => 'yourdomain.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,
