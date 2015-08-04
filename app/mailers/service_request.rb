@@ -10,7 +10,7 @@ class ServiceRequest < ApplicationMailer
   	@email = email || 'unknown'
   	@address = address || 'unknown'
   	@description = description || 'unknown'
-    mail( :to => 'toony1908@gmail.com',
+    mail( :to => 'ricardos@coriscoconstruction.com',
     :subject => 'Service Request' ) 
   end
 end
