@@ -12,7 +12,7 @@ class WelcomeController < ApplicationController
 	end
 
 	def emailSend 
-		ServiceRequest.service(params[:description],params[:email], params[:first],params[:last], params[:date],params[:phone], params[:address]).deliver
+		ServiceRequest.service(params[:description],params[:email], params[:first],params[:last], Time.now ,params[:phone], params[:address]).deliver
       	redirect_to(action: 'serviceRequest')
 	end
 

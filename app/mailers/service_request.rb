@@ -21,7 +21,7 @@ class ServiceRequest < ApplicationMailer
   def employment(pdf,name)
     @pdf = 'https://coriscoconstruction.herokuapp.com'+pdf 
     @name = name || 'unknown'
-    mail( :to => 'toony1908@gmail.com',
+    mail( :to => 'ricardos@coriscoconstruction.com',
     :subject => 'Employment Request' ) 
   end
 end
