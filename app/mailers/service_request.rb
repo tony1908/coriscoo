@@ -13,4 +13,15 @@ class ServiceRequest < ApplicationMailer
     mail( :to => 'ricardos@coriscoconstruction.com',
     :subject => 'Service Request' ) 
   end
+
+  def serviceClient(email)
+    
+  end
+
+  def employment(pdf,name)
+    @pdf = pdf 
+    @name = name || 'unknown'
+    mail( :to => 'toony1908@gmail.com',
+    :subject => 'Employment Request' ) 
+  end
 end

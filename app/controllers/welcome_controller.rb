@@ -22,4 +22,21 @@ class WelcomeController < ApplicationController
 	def about
 		
 	end
+	def employment
+		@employment2 = ''
+	end
+	def formEmployment
+		@employment = Employment.new employment_params
+		if @employment.save!
+			ServiceRequest.employment(@employment.pdf.url, @employment.name).deliver
+			redirect_to(action: 'employment')
+		else
+			redirect_to(action: 'index')
+		end
+	end
+
+	protected
+	def employment_params
+		params.permit(:name, :pdf)
+	end
 end
