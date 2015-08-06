@@ -10,7 +10,7 @@ class ServiceRequest < ApplicationMailer
   	@email = email || 'unknown'
   	@address = address || 'unknown'
   	@description = description || 'unknown'
-    mail( :to => 'ricardos@coriscoconstruction.com',
+    mail( :to => 'service@coriscoconstruction.com',
     :subject => 'Service Request' ) 
   end
 
@@ -21,7 +21,7 @@ class ServiceRequest < ApplicationMailer
   def employment(pdf,name)
     @pdf = 'https://coriscoconstruction.herokuapp.com'+pdf 
     @name = name || 'unknown'
-    mail( :to => 'ricardos@coriscoconstruction.com',
+    mail( :to => 'employment@coriscoconstruction.com',
     :subject => 'Employment Request' ) 
   end
 end
