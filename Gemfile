@@ -12,6 +12,8 @@ gem 'devise'
 gem 'carrierwave'
 gem "cancan"
 gem 'active_skin'
+gem 'mini_magick'
+gem 'rmagick'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

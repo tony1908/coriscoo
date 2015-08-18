@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new 
  * file per style scope. .style
- *
+ *  
  *= require_tree .
  *= require_self 
 
@@ -28,6 +28,20 @@ body {
   line-height: 22px;
 }
 
+.letra
+{
+  font-size: 19px;
+}
+
+.carousel {
+    position: relative;
+    height: 385px;
+}
+
+.active{
+  color: #268340;
+}
+
 h1,
 h2,
 h3,
@@ -41,7 +55,7 @@ h6 {
 
 h1{
   font-size: 36px;
-  color:#fff;
+  color:#4e4e4e;
 }
 
 h2{
