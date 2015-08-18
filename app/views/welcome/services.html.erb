@@ -1,22 +1,39 @@
 <div class="container">
-    <div class="row">
+    
         <h2>Our Work</h2>
-    </div>
-    <table class="table table-striped">
-
-
-        <tbody>
+    
         <% @categories.each do |category| %>
+        <div class="col-md-4">
+        <h2 class="text-center"><%=category.name%></h2> 
+        <div class="row">
+            <div class="col-md-12">
+                <%= image_tag category.image, :class => "img_ca center-block" %>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12">
+                <%=category.description%>
+                <br>
+                <%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id} %>
+        
+            </div>
+            
+        </div>
+
+        </div>
+       
+      <!--   <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+
+
+
+
         <tr>
             <td><%=category.name%></td>
             <td><%=category.description%></td>
             <td><%= image_tag category.image, :class => "img_ca"%></td>
-            <td><%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id} %></td>
-       
-      <!--   <div class="col-md-4"></div>
-        <div class="col-md-4"></div> -->
+            <td><%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id} %></td> -->
         <% end%>
         </tr>
-    </tbody>
-    </table>
+   
 </div> 
