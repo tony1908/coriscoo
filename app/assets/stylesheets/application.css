@@ -33,6 +33,12 @@ body {
   font-size: 19px;
 }
 
+.boton
+{
+  background-color: #31B754;
+  color: white;
+}
+
 .carousel {
     position: relative;
     height: 385px;

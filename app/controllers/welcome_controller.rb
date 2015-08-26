@@ -1,14 +1,21 @@
 class WelcomeController < ApplicationController
 	def index
+		@estado1 = 'active'
 		
+	
 	end
 
 	def services
 		@categories = Category.all
+		
+		@estado2 = 'active'
+		
+		
 	end
 
 	def serviceRequest
 		@user = ''
+		@estado3 = 'active'
 	end
 
 	def emailSend 
@@ -18,12 +25,14 @@ class WelcomeController < ApplicationController
 
 	def service
 		@service = Photo.where(category_id:params[:id])
+		@estado2 = 'active'
 	end
 	def about
 		
 	end
 	def employment
 		@employment2 = ''
+		@estado4 = 'active'
 	end
 	def formEmployment
 		@employment = Employment.new employment_params
