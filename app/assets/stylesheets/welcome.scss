@@ -171,7 +171,9 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 
 .img_ca
 {
-	height: 300px; overflow: hidden; 
+	max-width:100%;
+	min-height:100%;
+	overflow: hidden; 
 }
 .img_se
 {
