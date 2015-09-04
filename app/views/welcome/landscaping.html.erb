@@ -1,0 +1,39 @@
+<div class="container">
+    
+        <h2>Landscaping</h2>
+    
+        <% @categories.each do |category| %>
+        <div class="col-md-4">
+        <h2 class="text-center"><%=category.name%></h2> 
+        <div class="row">
+            <div class="col-md-12 div-size">
+                <%= image_tag category.image, :class => "img_ca center-block" %>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12">
+                <p class="text-center"><%=category.description%></p>
+                <br>
+                <%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id, :class => "text-center"} %>
+        
+            </div>
+            
+        </div>
+
+        </div>
+       
+      <!--   <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+
+
+
+
+        <tr>
+            <td><%=category.name%></td>
+            <td><%=category.description%></td>
+            <td><%= image_tag category.image, :class => "img_ca"%></td>
+            <td><%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id} %></td> -->
+        <% end%>
+        </tr>
+   
+</div> 
