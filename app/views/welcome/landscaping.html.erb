@@ -1,13 +1,19 @@
 <div class="container">
     
+        <div class="row">
+            
         <h2>Landscaping</h2>
     
         <% @categories.each do |category| %>
+    
         <div class="col-md-4">
         <h2 class="text-center"><%=category.name%></h2> 
+         <%= image_tag category.image, :class => "img_ca" %>
         <div class="row">
-            <div class="col-md-12 div-size">
-                <%= image_tag category.image, :class => "img_ca center-block" %>
+            <div class="col-md-12 tam">
+                
+                   
+               
             </div>
         </div>
         <div class="row">
@@ -21,8 +27,8 @@
         </div>
 
         </div>
-       
-      <!--   <div class="col-md-4"></div>
+    <!--    
+     <div class="col-md-4"></div>
         <div class="col-md-4"></div>
 
 
@@ -34,6 +40,8 @@
             <td><%= image_tag category.image, :class => "img_ca"%></td>
             <td><%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id} %></td> -->
         <% end%>
-        </tr>
+
+        </div>
+ 
    
 </div> 

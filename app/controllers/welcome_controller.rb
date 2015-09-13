@@ -44,6 +44,18 @@ class WelcomeController < ApplicationController
 		end
 	end
 
+	def construction
+		@categories = Category.all
+		
+		@estado2 = 'active'
+	end
+
+	def landscaping
+		@categories = Category.all
+		
+		@estado2 = 'active'
+	end
+
 	protected
 	def employment_params
 		params.permit(:name, :pdf)

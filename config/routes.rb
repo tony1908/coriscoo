@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/service/:id' => 'welcome#service'
   post 'services/email' => 'welcome#emailSend'
   get '/employment' => 'welcome#employment'
+  get '/construction' => 'welcome#construction'
+  get '/landscaping' => 'welcome#landscaping'
   post '/employmentform' => 'welcome#formEmployment'
 
   # Example of regular route:

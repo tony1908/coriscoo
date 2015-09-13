@@ -8,7 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new 
- * file per style scope. .style
+ * file per style scope. .style .recent-work-wrap img footer midnight-blue
  *  
  *= require_tree .
  *= require_self  
@@ -641,8 +641,11 @@ input.search-form:hover {
 }
 
 .recent-work-wrap img{
-  width: 98%;
+  width: auto;
   padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .recent-work-wrap .recent-work-inner{
@@ -1567,7 +1570,8 @@ ul.social_icons li  a i{
   background: none repeat scroll 0 0 #2E2E2E;
   border-top: 5px solid #C52D2F;
   height: 84px;
-  margin-top: 110px;
+  padding-top: 500px
+  margin-top: 2000px;
 }
 
 .footer_left {
@@ -2547,6 +2551,7 @@ shortcodes page css
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 110px;
   color: #fff;
   background: #268340;
 }
@@ -2573,5 +2578,27 @@ shortcodes page css
 .logo-img
 {
   width: 200px;
+}
+.formulario
+{
+  padding-top: 30px;
+}
+.btn-primary {
+    padding: 8px 20px;
+    background: #268340;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #268340;
+    border-color: #268340;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 

@@ -1,12 +1,6 @@
 <link rel="stylesheet" href="http://www.coriscoconstruction.com/wp-content/themes/Corisco/style.css" type="text/css" media="screen" />
 <div class="container">
-  <div class="row">
-    
-    <div class="col-md-12">
-      <h2><br><br> CONTACT INFO: Office: 773-843-3434 Fax: 773-843-3939 General inbox: info@CoriscoConstruction.com</h2>
-    </div>
-    
-  </div>
+ <div class="formulario">
 	<h2>Service Request</h2>
 	
   <%= form_for @user,:html => {:class => "form-horizontal"}, url: url_for( action: 'emailSend'), method: :post do  |f| %>
@@ -54,6 +48,7 @@
       <%= f.submit "Submit", class: "btn btn-default btn-primary center-block" %>  
       <br><br>
  <% end %>
+  </div>
 </div>
 
 
