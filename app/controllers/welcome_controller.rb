@@ -24,6 +24,7 @@ class WelcomeController < ApplicationController
 	end
 
 	def service
+		@title = params[:title]
 		@service = Photo.where(category_id:params[:id])
 		@estado2 = 'active'
 	end

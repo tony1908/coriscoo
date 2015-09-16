@@ -20,7 +20,7 @@
              <div class="col-md-12">
                 <p class="text-center"><%=category.description%></p>
                 <br>
-                <%= link_to "Show", {:controller => "welcome", :action => "service", :id => category.id, :class => "text-center"} %>
+                <%= link_to "Show","/service/"+category.id.to_s+'?title='+category.name, :class => "btn btn-default text-center"  %>
         
             </div>
             

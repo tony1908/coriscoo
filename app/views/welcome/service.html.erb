@@ -3,12 +3,12 @@
         <div class="container">
             <div class="center wow fadeInDown">
            
-                <h2></h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniadm</p>
+                <h2><%= @title %></h2>
+                
             </div>
 			 
             <div class="row">
-            <% @service.each do |service| %>
+            <% @service.each do |service| %> 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="#"><%= service.title %></a> </h3>
                     <div class="recent-work-wrap">
@@ -16,7 +16,12 @@
 
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3><a href="#"><%= service.title %></a> </h3>
+                                <% if service.kind_id == 1 %>
+                                <h3><a href="#">Commercial</a> </h3>
+                                <% elsif service.kind_id == 2 %>
+                                <h3><a href="#">Residential</a> </h3>
+                                <% else%>
+                                <% end %>
                                 <p><%=service.description %></p>
                                 <a class="preview" href="<%=service.photo %>" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                             </div> 

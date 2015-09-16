@@ -20,7 +20,7 @@
                 <p class="text-center"><%=category.description%></p>
                 <br>
                 <div class="btn-group text-center">
-                    <%= link_to "Show","/service/"+category.id.to_s, :class => "btn btn-default text-center"  %>
+                    <%= link_to "Show","/service/"+category.id.to_s+'?title='+category.name, :class => "btn btn-default text-center"  %>
                 </div>
             
             </div>
