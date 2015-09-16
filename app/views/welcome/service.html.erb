@@ -10,8 +10,9 @@
             <div class="row">
             <% @service.each do |service| %>
                 <div class="col-xs-12 col-sm-4 col-md-3">
+                <h3><a href="#"><%= service.title %></a> </h3>
                     <div class="recent-work-wrap">
-                        <img class="img_se" src="<%=service.photo %>" alt="">
+                        <img class="img_ca" src="<%=service.photo %>" alt="">
 
                         <div class="overlay">
                             <div class="recent-work-inner">

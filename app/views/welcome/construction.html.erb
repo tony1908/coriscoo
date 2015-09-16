@@ -1,1 +1,37 @@
-construction.html.erb
+<div class="container">
+    
+        <div class="row">
+            
+        <h2>Construction</h2>
+    
+        <% @categories.each do |category| %>
+    
+        <div class="col-md-4">
+        <h2 class="text-center"><%=category.name%></h2> 
+        <div class="row">
+            <div class="col-md-12 tam">
+                 <%= image_tag category.image, :class => "img_ca img-thumbnail" %>
+           
+               
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12 text-center">
+                <p class="text-center"><%=category.description%></p>
+                <br>
+                <div class="btn-group text-center">
+                    <%= link_to "Show","/service/"+category.id.to_s, :class => "btn btn-default text-center"  %>
+                </div>
+            
+            </div>
+            
+        </div>
+
+        </div>
+
+        <% end%>
+
+        </div>
+ 
+   
+</div> 

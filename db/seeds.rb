@@ -9,3 +9,5 @@
 
 Type.create([{name:'Landscaping'}])
 Type.create([{name:'Construction'}])
+Kind.create([{name:'Commercial'}])
+Kind.create([{name:'Residential'}])
