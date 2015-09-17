@@ -47,7 +47,7 @@ class WelcomeController < ApplicationController
 
 	def construction
 		@categories = Category.all
-		# @categories = Category.where(type_id:2)
+		# @categories = Category.where(type_id:2) g
 		
 		@estado2 = 'active'
 	end
