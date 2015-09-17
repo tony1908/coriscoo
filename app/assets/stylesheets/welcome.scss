@@ -172,14 +172,14 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 .img_ca
 {
 	max-width:100%;
-	min-height:100%;
+	min-height:auto;
 	overflow: hidden; 
 }
 .img_se
 {
 	height: 300px; overflow: hidden; 
 }
-.img_se2 
+.img_se2  
 {
 	width: 100%; overflow: hidden; 
 }
