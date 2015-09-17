@@ -17,6 +17,14 @@ class PhotoUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
+     def move_to_cache
+    true
+  end
+
+  def move_to_store
+    true
+  end
+
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:
@@ -36,7 +44,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
    # version :thumb do
    #  process :resize_to_limit => [100, 100]
    #  # process :quality => 100 
-  end
+  # end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
