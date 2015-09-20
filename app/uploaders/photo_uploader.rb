@@ -1,14 +1,11 @@
 # encoding: utf-8
 
 class PhotoUploader < CarrierWave::Uploader::Base
-# require 'carrierwave/processing/mini_magick'
   # Include RMagick or MiniMagick support:
-  # include CarrierWave::RMagick
-# Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
 
-  # Choose what kind of storage to use for this uploader: g f
+  # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
   def cache_dir
@@ -28,6 +25,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   def move_to_store
     true
   end
+
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:
@@ -44,9 +42,8 @@ class PhotoUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-   # version :thumb do
-   #  process :resize_to_limit => [100, 100]
-   #  # process :quality => 100 
+  # version :thumb do
+  #   process :resize_to_fit => [50, 50]
   # end
 
   # Add a white list of extensions which are allowed to be uploaded.
