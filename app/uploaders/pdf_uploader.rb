@@ -3,7 +3,7 @@
 class PdfUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick f d
-  # include CarrierWave::MiniMagick
+  # include CarrierWave::MiniMagick f
 
   # Choose what kind of storage to use for this uploader:
   storage :dropbox
